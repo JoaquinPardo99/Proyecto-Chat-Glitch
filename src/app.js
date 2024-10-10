@@ -5,7 +5,7 @@ import viewsRoutes from "./routes/views.router.js";
 import __dirname from "./utils.js";
 
 const app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 // Configuracion del servidor para recibir JSON //
 app.use(express.json());
