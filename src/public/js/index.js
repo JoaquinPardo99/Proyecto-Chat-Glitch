@@ -2,16 +2,9 @@
 
 const socket = io();
 
-/* socket.emit("mensaje_key", "Hola, soy el cliente"); */
-
-/* socket.on("msg_02", (data) => {
-  console.log(data);
-}); */
-
-/* socket.on("msg_03", (data) => {
-  console.log(data);
-}); */
-
-socket.on("msg_04", (data) => {
-  console.log(data);
+Swal.fire({
+  icon: "success",
+  title: "Socket conectado!",
+  text: "Para ver la consola de logs, abre la consola de tu navegador",
+  confirmButtonText: "Ok",
 });
